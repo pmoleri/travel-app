@@ -1,0 +1,96 @@
+:host {
+  display: flex;
+  align-items: stretch;
+}
+.column-layout {
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  width: 50%;
+  min-width: 50px;
+  position: relative;
+}
+.row-layout {
+  height: 100%;
+  flex: 1 1 0;
+  min-height: 50px;
+  align-items: stretch;
+  min-width: 50px;
+  position: relative;
+}
+.column-layout_1 {
+  min-width: max-content;
+  min-height: 50px;
+  width: 50%;
+  align-items: stretch;
+  position: relative;
+}
+.column-layout_2 {
+  background-color: transparent;
+  background-image: url("https://images.unsplash.com/photo-1501854140801-50d01698950b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2280&q=80");
+  min-height: 50px;
+  width: 50%;
+  align-items: stretch;
+  min-width: 50px;
+  position: relative;
+}
+.layout {
+  min-height: max-content;
+  align-items: stretch;
+  min-width: 50px;
+  position: relative;
+}
+.layout_1 {
+  margin: 0 0 32px;
+}
+.column-layout_3 {
+  min-height: 50px;
+  align-items: stretch;
+  min-width: 50px;
+  position: relative;
+}
+.layout_2 {
+  width: 50%;
+}
+.title {
+  color: var(--igx-grays-900);
+  margin: 0 0 16px;
+  height: max-content;
+  min-width: min-content;
+  flex: 0 0 auto;
+}
+.text {
+  margin: 0 0 16px;
+  height: max-content;
+  min-width: min-content;
+  flex: 0 0 auto;
+}
+.button {
+  margin: 32px 0 0;
+  min-width: min-content;
+  height: max-content;
+  flex: 0 0 auto;
+}
+.checkbox {
+  width: max-content;
+  height: max-content;
+  flex: 0 0 auto;
+}
+.input-group {
+  margin: 0 0 24px;
+  min-width: min-content;
+  height: max-content;
+  flex: 0 0 auto;
+}
+.button_1 {
+  min-width: min-content;
+  height: max-content;
+  flex: 0 0 auto;
+}
+.row {
+  display: flex;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}

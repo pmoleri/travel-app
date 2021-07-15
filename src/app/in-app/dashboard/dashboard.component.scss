@@ -1,0 +1,219 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.column-layout {
+  height: 25%;
+  min-height: max-content;
+  background-image: url("https://images.unsplash.com/photo-1505118380757-91f5f5632de0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHN1bW1lcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  justify-content: center;
+  background-color: transparent;
+  position: sticky;
+  z-index: 1;
+  padding: 24px;
+  overflow: auto;
+  flex: 0 0 auto;
+  min-width: 50px;
+}
+.row-layout {
+  height: 83px;
+  overflow: hidden;
+  align-items: center;
+  padding: 24px;
+  justify-content: space-between;
+  flex: 0 0 auto;
+}
+.column-layout_1 {
+  height: 812px;
+  width: 100%;
+  background-color: var(--igx-grays-100);
+  position: sticky;
+  z-index: 1;
+  padding: 24px;
+  overflow: auto;
+  min-width: 50px;
+  min-height: 50px;
+  align-items: stretch;
+}
+.column-layout_2 {
+  min-width: 50%;
+  width: 75%;
+  background-color: var(--igx-grays-200);
+  height: 100%;
+  align-items: center;
+  overflow: auto;
+  min-height: 50px;
+}
+.column-layout_3 {
+  width: 94%;
+  margin: 0 0 16px;
+  flex: 0 0 auto;
+  align-items: stretch;
+}
+.column-layout_4 {
+  width: 25%;
+  overflow: auto;
+  min-width: 50px;
+  min-height: 50px;
+  align-items: stretch;
+}
+.column-layout_5 {
+  margin: -32px 0 24px;
+  width: 96%;
+  background-color: var(--igx-surface-500);
+  position: sticky;
+  height: max-content;
+  z-index: 1;
+  padding: 24px;
+  flex: 0 0 auto;
+  min-width: 50px;
+  min-height: 50px;
+  align-items: stretch;
+}
+.column-layout_6 {
+  margin: 0 0 24px;
+  width: 96%;
+  background-color: var(--igx-surface-500);
+  position: sticky;
+  height: max-content;
+  z-index: 1;
+  padding: 24px;
+  flex: 0 0 auto;
+  min-width: 50px;
+  min-height: 50px;
+  align-items: stretch;
+}
+.actions {
+  min-height: 40px;
+  min-width: 50px;
+}
+.card {
+  width: 240px;
+  margin: 0 8px 0 0;
+  height: max-content;
+  flex: 0 0 auto;
+}
+.column-layout_7 {
+  width: 50%;
+  margin: 0 4px 0 0;
+  background-color: transparent;
+  align-items: stretch;
+}
+.column-layout_8 {
+  padding: 16px;
+  margin: 0 0 0 8px;
+  background-color: var(--igx-grays-100);
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  min-height: 50px;
+  align-items: stretch;
+}
+.column-layout_9 {
+  width: 96%;
+  background-color: var(--igx-surface-500);
+  position: sticky;
+  height: max-content;
+  z-index: 1;
+  padding: 24px;
+  flex: 0 0 auto;
+  min-width: 50px;
+  min-height: 50px;
+  align-items: stretch;
+}
+.row-layout_1 {
+  height: 100%;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  align-items: stretch;
+}
+.row-layout_2 {
+  background-color: transparent;
+  margin: 0 0 16px;
+  justify-content: space-between;
+  min-width: 50px;
+  min-height: 50px;
+  align-items: stretch;
+}
+.row-layout_3 {
+  align-items: center;
+  margin: 0 0 16px;
+  justify-content: space-between;
+  position: relative;
+}
+.row-layout_4 {
+  overflow: auto;
+  justify-content: space-between;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  align-items: stretch;
+}
+.column-layout_10 {
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 50px;
+  min-height: 50px;
+  align-items: stretch;
+}
+.row-layout_5 {
+  flex: 0 0 auto;
+}
+.title {
+  margin: 0 0 8px;
+  color: var(--igx-surface-500);
+  height: max-content;
+  min-width: min-content;
+  flex: 0 0 auto;
+}
+.title_1 {
+  width: 580px;
+  color: var(--igx-surface-500);
+  height: max-content;
+  min-width: min-content;
+  flex: 0 0 auto;
+}
+.image {
+  margin: 0 0 4px;
+  min-width: 0;
+  min-height: 0;
+  object-fit: cover;
+}
+.title_2 {
+  height: max-content;
+  min-width: min-content;
+  flex: 0 0 auto;
+}
+.button {
+  height: max-content;
+  min-width: min-content;
+  flex: 0 0 auto;
+}
+.icon-button {
+  flex: 0 0 auto;
+}
+.grid {
+  width: 100%;
+  flex: 0 0 auto;
+  height: 200px;
+  min-width: 50px;
+  min-height: 50px;
+}
+.igx-column {
+  width: 500px;
+  height: 200px;
+  min-width: 50px;
+  min-height: 50px;
+}
+.row {
+  display: flex;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}

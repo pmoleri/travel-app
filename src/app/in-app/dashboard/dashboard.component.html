@@ -1,0 +1,122 @@
+<div class="row-layout_1 row">
+  <div class="column-layout_2 column">
+    <div class="column-layout column">
+      <div class="column-layout_3 column">
+        <h4 class="title">Hi, Sarah!</h4>
+        <p class="igx-typography__subtitle-1 title_1">We have some great suggestions for your next travel! We've searched the whole web to provide you with these rare findings - special for you!</p>
+      </div>
+    </div>
+    <div class="column-layout_5 column">
+      <div class="row-layout_3 row">
+        <h6 class="title_2">Latest in articles</h6>
+        <button igxButton="outlined" igxButtonColor="var(--igx-grays-900)" [disabled]="false" routerLink="/in-app/articles" class="button">
+          <span>view all ARTICLES</span>
+        </button>
+      </div>
+      <div class="row-layout_4 row-layout_5 row">
+        <igx-card type="outlined" *ngFor="let item of travelappSelectedArticles" class="card">
+          <igx-card-media height="120px">
+            <img [src]="item.image_url" />
+          </igx-card-media>
+          <igx-card-header>
+            <h3 igxCardHeaderTitle>{{ item.title }}</h3>
+            <h5 igxCardHeaderSubtitle>{{ item.subtitle }}</h5>
+          </igx-card-header>
+          <igx-card-actions [reverse]="true" class="actions">
+            <button igxButton="icon" type="icon" [disabled]="false" class="icon-button">
+              <igx-icon>bookmark_border</igx-icon>
+            </button>
+            <button igxButton="icon" type="icon" [disabled]="false" class="icon-button">
+              <igx-icon>share</igx-icon>
+            </button>
+            <button igxButton="outlined" igxButtonColor="var(--igx-grays-900)" [disabled]="false" class="button">
+              <span>read</span>
+            </button>
+          </igx-card-actions>
+        </igx-card>
+        <div class="column-layout_8 column">
+          <button igxButton="outlined" igxButtonColor="var(--igx-grays-900)" [disabled]="false" routerLink="/in-app/articles" class="button">
+            <span>VIEW ALL</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="column-layout_6 column">
+      <div class="row-layout_3 row-layout_5 row">
+        <h6 class="title_2">Destinations</h6>
+        <button igxButton="outlined" igxButtonColor="var(--igx-grays-900)" [disabled]="false" class="button">
+          <span>VIEW ALL DESTINATIONS</span>
+        </button>
+      </div>
+      <div class="row-layout_4 row-layout_5 row">
+        <igx-card type="outlined" *ngFor="let item of travelappDestinations" class="card">
+          <igx-card-media height="120px">
+            <img [src]="item.image_url" />
+          </igx-card-media>
+          <igx-card-header>
+            <h3 igxCardHeaderTitle>{{ item.title }}</h3>
+            <h5 igxCardHeaderSubtitle></h5>
+          </igx-card-header>
+          <igx-card-actions [reverse]="true" class="actions">
+            <button igxButton="icon" type="icon" [disabled]="false" class="icon-button">
+              <igx-icon>bookmark_border</igx-icon>
+            </button>
+            <button igxButton="icon" type="icon" [disabled]="false" class="icon-button">
+              <igx-icon>share</igx-icon>
+            </button>
+            <button igxButton="outlined" igxButtonColor="var(--igx-grays-900)" [disabled]="false" class="button">
+              <span>view</span>
+            </button>
+          </igx-card-actions>
+        </igx-card>
+        <div class="column-layout_8 column">
+          <button igxButton="outlined" igxButtonColor="var(--igx-grays-900)" [disabled]="false" class="button">
+            <span>discover more</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="column-layout_9 column">
+      <div class="row-layout_3 row-layout_5 row">
+        <h6 class="title_2">My travel lists</h6>
+        <button igxButton="outlined" igxButtonColor="var(--igx-grays-900)" [disabled]="false" class="button">
+          <span>VIEW ALL LISTS</span>
+        </button>
+      </div>
+      <div class="row-layout_4 row">
+        <igx-grid [data]="northwindProducts" [autoGenerate]="false" width="100%" height="200px" class="grid">
+          <igx-column field="productID" header="productID" title="productID" dataType="number" class="igx-column"></igx-column>
+          <igx-column field="supplierID" header="supplierID" title="supplierID" dataType="number" class="igx-column"></igx-column>
+          <igx-column field="categoryID" header="categoryID" title="categoryID" dataType="number" class="igx-column"></igx-column>
+          <igx-column field="quantityPerUnit" header="quantityPerUnit" title="quantityPerUnit" dataType="string" class="igx-column"></igx-column>
+          <igx-column field="unitPrice" header="unitPrice" title="unitPrice" dataType="number" class="igx-column"></igx-column>
+          <igx-column field="unitsInStock" header="unitsInStock" title="unitsInStock" dataType="number" class="igx-column"></igx-column>
+          <igx-column field="unitsOnOrder" header="unitsOnOrder" title="unitsOnOrder" dataType="number" class="igx-column"></igx-column>
+          <igx-column field="reorderLevel" header="reorderLevel" title="reorderLevel" dataType="number" class="igx-column"></igx-column>
+          <igx-column field="discontinued" header="discontinued" title="discontinued" dataType="boolean" class="igx-column"></igx-column>
+          <igx-column field="name" header="name" title="name" dataType="string" class="igx-column"></igx-column>
+        </igx-grid>
+      </div>
+    </div>
+  </div>
+  <div class="column-layout_4 column">
+    <div class="row-layout row">
+      <h6 class="title_2">Photos</h6>
+      <button igxButton="outlined" igxButtonColor="var(--igx-grays-900)" [disabled]="false" class="button">
+        <span>GO TO ALBUM</span>
+      </button>
+    </div>
+    <div class="column-layout_1 column">
+      <div class="column-layout_10 column">
+        <div class="row-layout_2 row">
+          <div class="column-layout_7 column">
+            <img [src]="item.image_url" *ngFor="let item of travelappImageSet1" class="image" />
+          </div>
+          <div class="column-layout_7 column">
+            <img [src]="item1.image_url" *ngFor="let item1 of travelappImageSet2" class="image" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="row-layout row">
+  <div class="column-layout_1 column">
+    <div class="column-layout_3 column">
+      <div class="column-layout_4 column">
+        <h3 class="title">Login</h3>
+        <p class="igx-typography__body-2 text">Please, login so you can access all applications features.</p>
+      </div>
+      <igx-input-group type="border" placeholder="myname@website.com" class="input-group">
+        <label igxLabel for="inputField">Email</label>
+        <input type="text" name="inputField" [required]="false" [disabled]="false" placeholder="myname@website.com" igxInput />
+      </igx-input-group>
+      <igx-input-group type="border" placeholder="Min 8 characters" class="input-group">
+        <label igxLabel for="inputField">Password</label>
+        <input type="text" name="inputField" [required]="false" [disabled]="false" placeholder="Min 8 characters" igxInput />
+      </igx-input-group>
+      <div class="row-layout_1 row">
+        <igx-checkbox [checked]="true" [disabled]="false" labelPosition="after" class="checkbox">Remember me</igx-checkbox>
+        <a href target="_self" routerLink="/home/reset-password" class="igx-typography__body-2 link">Forgot password?</a>
+      </div>
+      <button igxButton="raised" igxButtonBackground="var(--igx-secondary-500)" [disabled]="false" routerLink="/in-app/dashboard" class="button_1">
+        <span>log in</span>
+      </button>
+    </div>
+    <div class="column-layout column">
+      <button igxButton="outlined" igxButtonColor="var(--igx-grays-900)" [disabled]="false" routerLink="/home/sign-up" class="button">
+        <span>Don't have a registration? Sign up now!</span>
+      </button>
+    </div>
+  </div>
+  <div class="column-layout_2 column"></div>
+</div>

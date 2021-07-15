@@ -1,0 +1,124 @@
+<div class="layout row-layout_2 row">
+  <div class="row-layout row">
+    <div class="column-layout column">
+      <h6 class="title">All articles</h6>
+      <div class="row-layout_1 row">
+        <div class="column-layout_3 column">
+          <igx-card type="outlined" *ngFor="let item of travelappArticlesSource1" class="card">
+            <igx-card-media height="240px">
+              <img [src]="item.image_url" />
+            </igx-card-media>
+            <igx-card-header>
+              <h3 igxCardHeaderTitle>{{ item.title }}</h3>
+              <h5 igxCardHeaderSubtitle>{{ item.subtitle }}</h5>
+            </igx-card-header>
+            <igx-card-actions class="actions">
+              <button igxButton="icon" type="icon" [disabled]="false" class="icon-button">
+                <igx-icon>bookmark_border</igx-icon>
+              </button>
+              <button igxButton="icon" type="icon" [disabled]="false" class="icon-button">
+                <igx-icon>share</igx-icon>
+              </button>
+              <button igxButton="flat" igxButtonColor="var(--igx-grays-900)" [disabled]="false" class="button">
+                <span>Read</span>
+              </button>
+            </igx-card-actions>
+          </igx-card>
+        </div>
+        <div class="column-layout_3 column">
+          <igx-card type="outlined" *ngFor="let item of travelappArticlesSource2" class="card">
+            <igx-card-media height="240px">
+              <img [src]="item.image_url" />
+            </igx-card-media>
+            <igx-card-header>
+              <h3 igxCardHeaderTitle>{{ item.title }}</h3>
+              <h5 igxCardHeaderSubtitle>{{ item.subtitle }}</h5>
+            </igx-card-header>
+            <igx-card-actions class="actions">
+              <button igxButton="icon" type="icon" [disabled]="false" class="icon-button">
+                <igx-icon>bookmark_border</igx-icon>
+              </button>
+              <button igxButton="icon" type="icon" [disabled]="false" class="icon-button">
+                <igx-icon>share</igx-icon>
+              </button>
+              <button igxButton="flat" igxButtonColor="var(--igx-grays-900)" [disabled]="false" class="button">
+                <span>Read</span>
+              </button>
+            </igx-card-actions>
+          </igx-card>
+        </div>
+        <div class="column-layout_3 column">
+          <igx-card type="outlined" *ngFor="let item of travelappArticlesSource3" class="card">
+            <igx-card-media height="240px">
+              <img [src]="item.image_url" />
+            </igx-card-media>
+            <igx-card-header>
+              <h3 igxCardHeaderTitle>{{ item.title }}</h3>
+              <h5 igxCardHeaderSubtitle>{{ item.subtitle }}</h5>
+            </igx-card-header>
+            <igx-card-actions class="actions">
+              <button igxButton="icon" type="icon" [disabled]="false" class="icon-button">
+                <igx-icon>bookmark_border</igx-icon>
+              </button>
+              <button igxButton="icon" type="icon" [disabled]="false" class="icon-button">
+                <igx-icon>share</igx-icon>
+              </button>
+              <button igxButton="flat" igxButtonColor="var(--igx-grays-900)" [disabled]="false" class="button">
+                <span>Read</span>
+              </button>
+            </igx-card-actions>
+          </igx-card>
+        </div>
+        <div class="column-layout_1 column">
+          <igx-card type="outlined" *ngFor="let item of travelappArticlesSource4" class="card">
+            <igx-card-media height="240px">
+              <img [src]="item.image_url" />
+            </igx-card-media>
+            <igx-card-header>
+              <h3 igxCardHeaderTitle>{{ item.title }}</h3>
+              <h5 igxCardHeaderSubtitle>{{ item.subtitle }}</h5>
+            </igx-card-header>
+            <igx-card-actions class="actions">
+              <button igxButton="icon" type="icon" [disabled]="false" class="icon-button">
+                <igx-icon>bookmark_border</igx-icon>
+              </button>
+              <button igxButton="icon" type="icon" [disabled]="false" class="icon-button">
+                <igx-icon>share</igx-icon>
+              </button>
+              <button igxButton="flat" igxButtonColor="var(--igx-grays-900)" [disabled]="false" class="button">
+                <span>Read</span>
+              </button>
+            </igx-card-actions>
+          </igx-card>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column-layout_5 column">
+    <div class="column-layout_2 column">
+      <h6 class="title">Recommended</h6>
+      <div class="layout column-layout_4 column">
+        <igx-card type="outlined" *ngFor="let item of travelappSelectedArticles" class="card">
+          <igx-card-media height="160px">
+            <img [src]="item.image_url" />
+          </igx-card-media>
+          <igx-card-header>
+            <h3 igxCardHeaderTitle>{{ item.title }}</h3>
+            <h5 igxCardHeaderSubtitle>{{ item.subtitle }}</h5>
+          </igx-card-header>
+          <igx-card-actions class="actions">
+            <button igxButton="icon" type="icon" [disabled]="false" class="icon-button">
+              <igx-icon>bookmark_border</igx-icon>
+            </button>
+            <button igxButton="icon" type="icon" [disabled]="false" class="icon-button">
+              <igx-icon>share</igx-icon>
+            </button>
+            <button igxButton="flat" igxButtonColor="var(--igx-grays-900)" [disabled]="false" class="button">
+              <span>Read</span>
+            </button>
+          </igx-card-actions>
+        </igx-card>
+      </div>
+    </div>
+  </div>
+</div>
